@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header w3-include-html="./includes/header.html"></header>
+    </div>
+    <h2>Experiencia</h2>
+    <h3>Nombre del video</h3>
+    <video controls poster="./img/foto.jpeg" preload="auto" width="512px" height="230px">
+        <source src="video/video1.ogv" type="video/ogg">
+        <source src="video/video2.webm" type="video/web">
+        Tu navegador no soporta ningun ode los videos
+    </video>
+    <h3>Nombre del audio</h3>
+        <audio controls>
+            <source src="audios/audio.mp3" type="audio/mp3">
+            Texto cuando tu browser no soporta audio
+        </audio>
+    <div w3-include-html="./includes/pie.html"></div>
+    <script src="./js/w3.js"></script>
+</body>
+
+</html>

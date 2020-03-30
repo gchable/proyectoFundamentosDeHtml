@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header w3-include-html="./includes/header.html"></header>
+    </div>
+    <h2>Educación</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Institución</th>
+                <th>Lugar</th>
+                <th>¿Culminó?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="" method="post" name="miFormulario">
+        <fieldset>
+            <legend>
+                <h3>Agregar Estudios</h3>
+            </legend>
+            <label for="ano">Año:</label>
+            <select name="ano" id="ano">
+                <option value="0">Seleccione</option>
+                <option value="1">2020</option>
+                <option value="2">2019</option>
+                <option value="3">2018</option>
+                <option value="4">2017</option>
+            </select>
+            <p>
+                <label for="institucion">Institución</label>
+                <input type="text" name="institucion" id="institucion" required>
+            </p>
+            <p>
+                <label for="lugar">Lugar:</label>
+                <input type="text" name="lugar" id="lugar">
+            </p>
+            <input type="submit" value="Guardar">
+        </fieldset>
+    </form>
+    <div w3-include-html="./includes/pie.html"></div>
+    <script src="./js/w3.js"></script>
+</body>
+
+</html>
