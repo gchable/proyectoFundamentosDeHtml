@@ -4,27 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Chable">
+    <meta name="description" content="Proyecto del curso Responsive Web Desingn - Fundamentos de html">
     <title>Hoja de vida</title>
 </head>
 
 <body>
     <div id="contenedor">
-        <header w3-include-html="./includes/header.html"></header>
+        <header>
+            <!-- <svg>
+                <image xlink:href="img/logo.svg" width="200px" height="67"></image>
+            </svg> -->
+            <img src="./img/logo.svg" alt="Logo" width="200px">
+            <h1>Hoja de vida</h1>
+            <h2>Gonzalo Chable</h2>
+            <h3>Lugar de nacimiento: Tizimin Yucatan, Enero 10 1977</h3>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="educacion.html">Educación</a>
+                <a href="experiencia.html">Experiencia</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Experiencia</h2>
+            <h3>Nombre del video</h3>
+            <video controls poster="./img/foto.jpeg" preload="auto" width="512px" height="230px">
+                <source src="video/video1.ogv" type="video/ogg">
+                <source src="video/video2.webm" type="video/web">
+                Tu navegador no soporta ningun ode los videos
+            </video>
+            <h3>Nombre del audio</h3>
+            <audio controls>
+                <source src="audios/audio.mp3" type="audio/mp3">
+                Texto cuando tu browser no soporta audio
+            </audio>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy; 2020 Gonzalo Chable<br>
+                Email: gonzalo_conta@hotmail.com<br>
+                Teléfono: 998 111 2231<br>
+                Dirección: Bonampak No. 26 Cancún Q. Roo
+            </p>
+        </footer>
     </div>
-    <h2>Experiencia</h2>
-    <h3>Nombre del video</h3>
-    <video controls poster="./img/foto.jpeg" preload="auto" width="512px" height="230px">
-        <source src="video/video1.ogv" type="video/ogg">
-        <source src="video/video2.webm" type="video/web">
-        Tu navegador no soporta ningun ode los videos
-    </video>
-    <h3>Nombre del audio</h3>
-        <audio controls>
-            <source src="audios/audio.mp3" type="audio/mp3">
-            Texto cuando tu browser no soporta audio
-        </audio>
-    <div w3-include-html="./includes/pie.html"></div>
-    <script src="./js/w3.js"></script>
 </body>
 
 </html>

@@ -4,23 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Chable">
+    <meta name="description" content="Proyecto del curso Responsive Web Desingn - Fundamentos de html">
     <title>Hoja de vida</title>
 </head>
 
 <body>
     <div id="contenedor">
-        <div w3-include-html="./includes/header.html"></div>
+        <header>
+            <!-- <svg>
+                <image xlink:href="img/logo.svg" width="200px" height="67"></image>
+            </svg> -->
+            <img src="./img/logo.svg" alt="Logo" width="200px">
+            <h1>Hoja de vida</h1>
+            <h2>Gonzalo Chable</h2>
+            <h3>Lugar de nacimiento: Tizimin Yucatan, Enero 10 1977</h3>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="educacion.html">Educación</a>
+                <a href="experiencia.html">Experiencia</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Información personal</h2>
+            <!-- <img src="./img/foto.jpeg" alt="Foto personal" title="Mi foto personal"> -->
+            <p>
+                Soy empleado en el área administrativa en la iniciativa privada, me encargo de la implementación de
+                proyectos nuevos así
+                como la elaboracion de estudios para potenciales clientes.
+            </p>
+            <p>
+                También imparto cursos para los nuevos elementos que se integran a nuestro equipo de trabajo.
+            </p>
+            <p>
+                Soy un entusiasta del desarrollo web, en el año 2007 implementé en mi empresa un portal para interactuar
+                con los
+                clientes basado en Simple Machines y Mkportal, también implementé otros con WordPress implementación que
+                siguen funcionando con éxito.
+            </p>
+            <p>
+                Sin embargo, fue en Febrero 2016 que decido inscribirme en Nex U en la carrera de sarrollador web.
+            </p>
+            <h3>Idiomas:</h3>
+            <ul>
+                <li>Español</li>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy; 2020 Gonzalo Chable<br>
+                Email: gonzalo_conta@hotmail.com<br>
+                Teléfono: 998 111 2231<br>
+                Dirección: Bonampak No. 26 Cancún Q. Roo
+            </p>
+        </footer>
     </div>
-    <h2>Información personal</h2>
-    <img src="./img/foto.jpeg" alt="Foto personal" title="Mi foto personal">
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ad animi neque veritatis vero inventore quia
-        accusamus? Provident nostrum, ratione voluptatibus obcaecati incidunt necessitatibus molestiae qui explicabo
-        nobis enim ullam, vitae dolor hic assumenda officia, voluptas quo iure veritatis aspernatur adipisci
-        consequuntur tenetur architecto! Debitis animi a iste repellat molestias.
-    </p>
-    <div w3-include-html="./includes/pie.html"></div>
-    <script src="./js/w3.js"></script>
 </body>
 
 </html>

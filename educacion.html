@@ -4,70 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Chable">
+    <meta name="description" content="Proyecto del curso Responsive Web Desingn - Fundamentos de html">
     <title>Hoja de vida</title>
 </head>
 
 <body>
     <div id="contenedor">
-        <header w3-include-html="./includes/header.html"></header>
+        <header>
+            <!-- <svg>
+                <image xlink:href="img/logo.svg" width="200px" height="67"></image>
+            </svg> -->
+            <img src="./img/logo.svg" alt="Logo" width="200px">
+            <h1>Hoja de vida</h1>
+            <h2>Gonzalo Chable</h2>
+            <h3>Lugar de nacimiento: Tizimin Yucatan, Enero 10 1977</h3>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="educacion.html">Educación</a>
+                <a href="experiencia.html">Experiencia</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Educación</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Institución</th>
+                        <th>Lugar</th>
+                        <th>¿Culminó?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1984</td>
+                        <td>Simón Bolivar</td>
+                        <td>Q. Roo Mex.</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>1993</td>
+                        <td>Francisco Zarco</td>
+                        <td>Q. Roo Mex.</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>Colegio Profesional</td>
+                        <td>Yucatán Mex.</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="" method="post" name="miFormulario">
+                <fieldset>
+                    <legend>
+                        <h3>Agregar Estudios</h3>
+                    </legend>
+                    <label for="ano">Año:</label>
+                    <select name="ano" id="ano">
+                        <option value="0">Seleccione</option>
+                        <option value="1">2020</option>
+                        <option value="2">2019</option>
+                        <option value="3">2018</option>
+                        <option value="4">2017</option>
+                    </select>
+                    <p>
+                        <label for="institucion">Institución</label>
+                        <input type="text" name="institucion" id="institucion" required>
+                    </p>
+                    <p>
+                        <label for="lugar">Lugar:</label>
+                        <input type="text" name="lugar" id="lugar">
+                    </p>
+                    <input type="submit" value="Guardar">
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy; 2020 Gonzalo Chable<br>
+                Email: gonzalo_conta@hotmail.com<br>
+                Teléfono: 998 111 2231<br>
+                Dirección: Bonampak No. 26 Cancún Q. Roo
+            </p>
+        </footer>
     </div>
-    <h2>Educación</h2>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Año</th>
-                <th>Institución</th>
-                <th>Lugar</th>
-                <th>¿Culminó?</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <form action="" method="post" name="miFormulario">
-        <fieldset>
-            <legend>
-                <h3>Agregar Estudios</h3>
-            </legend>
-            <label for="ano">Año:</label>
-            <select name="ano" id="ano">
-                <option value="0">Seleccione</option>
-                <option value="1">2020</option>
-                <option value="2">2019</option>
-                <option value="3">2018</option>
-                <option value="4">2017</option>
-            </select>
-            <p>
-                <label for="institucion">Institución</label>
-                <input type="text" name="institucion" id="institucion" required>
-            </p>
-            <p>
-                <label for="lugar">Lugar:</label>
-                <input type="text" name="lugar" id="lugar">
-            </p>
-            <input type="submit" value="Guardar">
-        </fieldset>
-    </form>
-    <div w3-include-html="./includes/pie.html"></div>
-    <script src="./js/w3.js"></script>
 </body>
 
 </html>
